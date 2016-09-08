@@ -1,11 +1,11 @@
 # Most common git screwups/questions and solutions
 
-[http://41j.com/blog/2015/02/common-git-screwupsquestions-solutions/](http://41j.com/blog/2015/02/common-git-screwupsquestions-solutions/)
+This is a fork of Nava Whiteford's article [Most common git screwups/questions and solutions](https://gist.github.com/akras14/3d242d80af8388ebca60). I've made this fork as a base to add my own notes. Home of this fork is my [git-info-collection](https://github.com/joede/git-info-collection).
 
-I was looking to learn a bit more about the parts of git I’ve not
+The original author was looking to learn a bit more about the parts of git he hasn't
 ventured into yet. What better way that looking the most common ways
 people screw them up and how to fix the resulting problems! Here’s a
-short list, compiled from my own experience and issues I’ve come across
+short list, compiled from his own experience and issues he's come across
 on the Internet.
 
 ## I wrote the wrong thing in a commit message

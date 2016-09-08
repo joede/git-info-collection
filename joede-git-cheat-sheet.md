@@ -1,6 +1,6 @@
 # Git Cheat Sheet
 
-This is a fork of [Alex Kras Gist](https://gist.github.com/akras14/3d242d80af8388ebca60). I've made this fork as a base to add my own notes. Home of this fork is [joede-git-cheat-sheet.md](https://gist.github.com/joede/89b3fb9f113fbfafd486acd3be077070).
+This is a fork of [Alex Kras Gist](https://gist.github.com/akras14/3d242d80af8388ebca60). I've made this fork as a base to add my own notes. Home of this fork is my [git-info-collection](https://github.com/joede/git-info-collection).
 
 ## Commands
 
@@ -11,7 +11,7 @@ This is a fork of [Alex Kras Gist](https://gist.github.com/akras14/3d242d80af838
 
 ### Configuration
 
-```
+```bash
 git config --global color.ui true
 git config --global push.default current
 git config --global core.editor vim
