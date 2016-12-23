@@ -17,6 +17,28 @@ allow you to edit the message on the most recent commit:
 git commit --amend
 ~~~~
 
+## How do I add a forgotten file to an commit?
+
+Sooner or later you will commit to fast and forgott a file. To avoid a cluttered history, it is possible to add the file to the previous commit object.
+
+~~~~
+git commit -m 'committed to fast and forgotten a file'
+git add forgotten_file
+git commit --amend
+~~~~
+
+## How to unstage a staged file?
+
+~~~~
+$ git add .
+$ git status
+...
+$ git reset HEAD CONTRIBUTING.md
+Unstaged changes after reset:
+M	CONTRIBUTING.md
+$ git status
+~~~~
+
 ## How can I undo the last commit?
 
 You can use git reset e.g.:
