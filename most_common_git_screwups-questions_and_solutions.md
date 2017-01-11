@@ -189,6 +189,12 @@ git archive --format zip --output /full/path/to/zipfile.zip master
 git checkout -- .
 ~~~~
 
+## Discard the changes made to a single file
+
+~~~~
+git checkout -- filename
+~~~~
+
 ## Create a new remote branch from the current local one
 
 ~~~~
