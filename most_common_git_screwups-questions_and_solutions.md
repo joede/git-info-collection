@@ -66,6 +66,28 @@ git revert commitid
 **Note:** the revert command is a safer alternative to the reset
 command, since the commit objects are still available!
 
+## Rename a tag
+
+To rename a tag, a new tag must be added and the old one must be deleted.
+
+~~~~
+git tag new-name old-name
+git tag -d old-name
+~~~~
+
+If the tag is pushed to a remote repository, you have to clear the old name there too. The colon in the push command removes the tag from the remote repository. If you don't do this, git will create the old tag on your machine when you pull.
+
+~~~~
+git push origin :old-name
+git push --tags
+~~~~
+
+**Note:** On every client with clones of the repository, users must remove the deleted tag too. This could be easily done with the following command:
+
+~~~~
+git pull --prune --tags
+~~~~
+
 ## Delete a Git branch remotely
 
 Git knows two ways to delete a branch inside the remote repository only.
