@@ -27,6 +27,36 @@ git add forgotten_file
 git commit --amend
 ~~~~
 
+## I've worked on the wrong branch. How to move unstaged files?
+
+In the case you have changed some files and forgotten to switch to the right branch, it is possible to *move the changes out of the way* by using the stash. After stashing the changes, the workspace is on par with the last commit of the branch.
+
+**Note:** untracked files are still there and can be ignored.
+
+~~~~
+$ git stash
+$ git checkout correct-branch
+$ git stash pop
+~~~~
+
+After the `stash pop`, all previously made changes available and ready for a commit.
+
+
+## I've worked on the wrong branch. How to branch unstaged files?
+
+In the case you have changed some files and forgotten to create a new branch, it is possible to *move the changes out of the way* by using the stash. After stashing the changes, create a new branch and apply the stashed changes.
+
+**Note:** untracked files are still there.
+
+~~~~
+$ git stash
+$ git checkout -b new-branch
+$ git stash pop
+~~~~
+
+After the `stash pop`, all previously made changes available and ready for a commit.
+
+
 ## How to unstage a staged file?
 
 ~~~~
@@ -185,7 +215,7 @@ git reset --hard origin/master
 ## How can I add an empty directory to my repository?
 
 You can’t! git doesn’t support this, but there’s a hack. You can create
-a .gitignore file in the directory with the following contents:
+a `.gitignore` file in the directory with the following contents:
 
 ~~~~
 # Ignore everything in this directory
@@ -272,8 +302,9 @@ git config --global credential.helper "cache --timeout=XXXX"
 git show commitid:filename
 ~~~~
 
-# Tips find in the comments
 
+
+# Tips find in the comments
 
 ## you want to undo the last rebase you completed
 
